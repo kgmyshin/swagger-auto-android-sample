@@ -1,0 +1,1 @@
+# swagger-auto-android-sample
