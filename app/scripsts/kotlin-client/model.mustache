@@ -1,0 +1,12 @@
+package {{modelPackage}}
+
+{{#imports}}import {{import}}
+{{/imports}}
+
+import com.google.gson.annotations.SerializedName
+
+{{#models}}
+{{#model}}
+{{>data_class}}
+{{/model}}
+{{/models}}

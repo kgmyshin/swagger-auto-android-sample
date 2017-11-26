@@ -18,6 +18,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
@@ -25,7 +28,12 @@ dependencies {
     implementation deps.support.appCompat
     implementation deps.support.constraintLayout
     implementation deps.kotlin
+    implementation deps.retrofit.converterGson
     testImplementation deps.junit
     testImplementation deps.kotlinTest
     testImplementation deps.mockito
+}
+
+task updateJson(type: Exec) {
+    commandLine(projectDir.absolutePath + "/scripts/generate.sh")
 }

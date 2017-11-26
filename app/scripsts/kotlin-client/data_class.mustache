@@ -1,0 +1,11 @@
+/**
+ * {{{description}}}
+{{#vars}}
+ * @param {{name}} {{{description}}}
+{{/vars}}
+ */
+data class {{classname}} (
+{{#vars}}
+{{>data_class_val}}{{^-last}},
+{{/-last}}{{/vars}}
+)

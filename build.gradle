@@ -45,6 +45,11 @@ ext.deps = [
                 constraintLayout: "com.android.support.constraint:constraint-layout:1.0.2",
                 multidex        : "com.android.support:multidex:1.0.2"
         ],
+        retrofit  : [
+                core          : "com.squareup.retrofit2:retrofit:2.3.0",
+                adapterRxJava2: "com.squareup.retrofit2:adapter-rxjava2:2.3.0",
+                converterGson : "com.squareup.retrofit2:converter-gson:2.3.0"
+        ],
         junit     : "junit:junit:4.12",
         mockito   : "org.mockito:mockito-core:2.8.9"
 ]
