@@ -967,6 +967,10 @@
           "type": "string",
           "example": "doggie"
         },
+        "parent_name": {
+          "type": "string",
+          "example": "mike"
+        },
         "sex": {
           "type": "integer",
           "format": "int64"
