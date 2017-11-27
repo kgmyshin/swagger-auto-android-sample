@@ -1,6 +1,5 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 echo $SCRIPT_DIR
-rm -rf $SCRIPT_DIR/dist
 rm $SCRIPT_DIR/swagger.json
 
 $SCRIPT_DIR/swagger-kotlin-codegen/gradlew -b $SCRIPT_DIR/swagger-kotlin-codegen/build.gradle jar
