@@ -22,7 +22,7 @@ data class PetJson (
     @SerializedName("name") val name: String?,
     @SerializedName("parent_name") val parentName: String,
     @SerializedName("sex") val sex: Long,
-    @SerializedName("photo_urls") val photoUrls: List<String>?,
+    @SerializedName("photo_urls") val photoUrls: List<String>,
     @SerializedName("tags") val tags: List<TagJson>,
     @SerializedName("status") val status: String
 )
