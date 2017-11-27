@@ -952,8 +952,7 @@
     "Pet": {
       "type": "object",
       "required": [
-        "name",
-        "photo_urls"
+        "name"
       ],
       "properties": {
         "id": {
